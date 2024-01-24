@@ -21,134 +21,134 @@ import com.ccsw.teammanager.person.model.PersonEntity;
 @Table(name = "v_person_absence")
 public class PersonAbsenceEntity {
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "id", nullable = false)
-  private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private String id;
 
-  @ManyToOne
-  @JoinColumn(name = "person_id")
-  private PersonEntity person;
+    @ManyToOne
+    @JoinColumn(name = "person_id")
+    private PersonEntity person;
 
-  @Column(name = "year")
-  private Integer year;
+    @Column(name = "year")
+    private Integer year;
 
-  @Column(name = "month")
-  private Integer month;
+    @Column(name = "month")
+    private Integer month;
 
-  @Column(name = "date")
-  private Date date;
+    @Column(name = "date")
+    private Date date;
 
-  @Column(name = "type")
-  private String type;
-  
-  @Column(name = "absence_type")
-  private String absence_type;
+    @Column(name = "type")
+    private String type;
 
-  /**
-   * @return id
-   */
-  public String getId() {
+    @Column(name = "absence_type")
+    private String absence_type;
 
-    return this.id;
-  }
+    /**
+     * @return id
+     */
+    public String getId() {
 
-  /**
-   * @param id new value of {@link #getid}.
-   */
-  public void setId(String id) {
+        return this.id;
+    }
 
-    this.id = id;
-  }
+    /**
+     * @param id new value of {@link #getid}.
+     */
+    public void setId(String id) {
 
-  /**
-   * @return person
-   */
-  public PersonEntity getPerson() {
+        this.id = id;
+    }
 
-    return this.person;
-  }
+    /**
+     * @return person
+     */
+    public PersonEntity getPerson() {
 
-  /**
-   * @param person new value of {@link #getperson}.
-   */
-  public void setPerson(PersonEntity person) {
+        return this.person;
+    }
 
-    this.person = person;
-  }
+    /**
+     * @param person new value of {@link #getperson}.
+     */
+    public void setPerson(PersonEntity person) {
 
-  /**
-   * @return year
-   */
-  public Integer getYear() {
+        this.person = person;
+    }
 
-    return this.year;
-  }
+    /**
+     * @return year
+     */
+    public Integer getYear() {
 
-  /**
-   * @param year new value of {@link #getyear}.
-   */
-  public void setYear(Integer year) {
+        return this.year;
+    }
 
-    this.year = year;
-  }
+    /**
+     * @param year new value of {@link #getyear}.
+     */
+    public void setYear(Integer year) {
 
-  /**
-   * @return month
-   */
-  public Integer getMonth() {
+        this.year = year;
+    }
 
-    return this.month;
-  }
+    /**
+     * @return month
+     */
+    public Integer getMonth() {
 
-  /**
-   * @param month new value of {@link #getmonth}.
-   */
-  public void setMonth(Integer month) {
+        return this.month;
+    }
 
-    this.month = month;
-  }
+    /**
+     * @param month new value of {@link #getmonth}.
+     */
+    public void setMonth(Integer month) {
 
-  /**
-   * @return date
-   */
-  public Date getDate() {
+        this.month = month;
+    }
 
-    return this.date;
-  }
+    /**
+     * @return date
+     */
+    public Date getDate() {
 
-  /**
-   * @param date new value of {@link #getdate}.
-   */
-  public void setDate(Date date) {
+        return this.date;
+    }
 
-    this.date = date;
-  }
+    /**
+     * @param date new value of {@link #getdate}.
+     */
+    public void setDate(Date date) {
 
-  /**
-   * @return type
-   */
-  public String getType() {
+        this.date = date;
+    }
 
-    return this.type;
-  }
+    /**
+     * @return type
+     */
+    public String getType() {
 
-  /**
-   * @param type new value of {@link #gettype}.
-   */
-  public void setType(String type) {
+        return this.type;
+    }
 
-	  this.type = type;
-  }
-  
-  public String getAbsence_type() {
+    /**
+     * @param type new value of {@link #gettype}.
+     */
+    public void setType(String type) {
 
-	  return this.absence_type;
-  }
+        this.type = type;
+    }
 
-  public void setAbsence_type(String absence_type) {
+    public String getAbsence_type() {
 
-	  this.absence_type = absence_type;
-  }
+        return this.absence_type;
+    }
+
+    public void setAbsence_type(String absence_type) {
+
+        this.absence_type = absence_type;
+    }
 
 }
